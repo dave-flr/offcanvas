@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Off canvas template</title>
 
+    <!-- Dev -->
     <link rel="stylesheet" href="assets/Cirrus-0.5.5/dist/cirrus.min.css">
-    <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
+    <!-- Production -->
+    <!-- <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" /> -->
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -20,7 +22,8 @@
 </head>
 
 <body>
-    <div class="header header-fixed unselectable header-animated header-dark fixed-head">
+    <div class="header header-fixed unselectable header-animated header-dark- fixed-head"
+        style="background-color: rgb(52,58,64);">
         <div class="header-brand">
             <div class="nav-item no-hover">
                 <a>
@@ -76,9 +79,9 @@
         </div>
     </div>
 
-    <div class="tab-container tabs-depth" style="margin-top: 3.5rem;">
+    <div class="tab-container tabs-depth tabs-" style="margin-top: 3.5rem; background-color: #FEFEFE;">
         <ul>
-            <li><a>Dashboard</a></li>
+            <li class="selected"><a>Dashboard</a></li>
             <li><a>Friends</a></li>
             <li><a>Explore</a></li>
             <li><a>Suggestions</a></li>
@@ -86,12 +89,12 @@
             <li><a>Link</a></li>
             <li><a>Link</a></li>
             <li><a>Link</a></li>
-            <li class="selected"><a>Me</a></li>
+            <li><a>Me</a></li>
         </ul>
     </div>
 
     <div class="content">
-        <div class="tile bg-link">
+        <div class="tile bg-link- u-round" style="background-color: #6F42C1;">
             <div class="tile__icon">
                 <img src="img/CirrusLogo.png" style="width: 110px; height: 80px;">
             </div>
@@ -100,7 +103,94 @@
                 <p class="tile__subtitle u-no-margin">Since 2011</p>
             </div>
         </div>
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-head">
+                <p class="card-head-title">Recent Updates</p>
+            </div>
+            <div class="content-list">
+                <div class="tile">
+                    <i class="fas fa-square fa-3x"></i>
+                    <div class="tile__container">
+                        <p class="tile__title u-no-margin">@username.</p>
+                        <p class="tile__subtitle u-no-margin">Donec id elit non mi porta gravida at eget metus. Fusce
+                            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                            sit amet risus.</p>
+                    </div>
+                </div>
+                <div class="divider u-no-margin"></div>
+                <div class="tile">
+                    <i class="fas fa-square fa-3x" style="color: #6F42C1;"></i>
+                    <div class="tile__container">
+                        <p class="tile__title u-no-margin">@username.</p>
+                        <p class="tile__subtitle u-no-margin">Donec id elit non mi porta gravida at eget metus. Fusce
+                            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                            sit amet risus.</p>
+                    </div>
+                </div>
+                <div class="divider u-no-margin"></div>
+                <div class="tile">
+                    <i class="fas fa-square fa-3x" style="color: crimson;"></i>
+                    <div class="tile__container">
+                        <p class="tile__title u-no-margin">@username.</p>
+                        <p class="tile__subtitle u-no-margin">Donec id elit non mi porta gravida at eget metus. Fusce
+                            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                            sit amet risus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="action-bar">
+                <div class="u-pull-right">
+                    <a href="#" class="u u-LR">All updates</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-head">
+                <p class="card-head-title">Suggestions</p>
+            </div>
+            <div class="content-list">
+                <div class="tile">
+                    <i class="fas fa-square fa-3x" style="color: #6F42C1;"></i>
+                    <div class="tile__container">
+                        <p class="tile__title u-no-margin">Full Name.</p>
+                        <p class="tile__subtitle u-no-margin">@username</p>
+                    </div>
+                    <div>
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="divider u-no-margin"></div>
+                <div class="tile">
+                    <i class="fas fa-square fa-3x" style="color: darkgoldenrod;"></i>
+                    <div class="tile__container">
+                        <p class="tile__title u-no-margin">Full Name.</p>
+                        <p class="tile__subtitle u-no-margin">@username</p>
+                    </div>
+                    <div>
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="divider u-no-margin"></div>
+                <div class="tile">
+                    <i class="fas fa-square fa-3x" style="color: deeppink;"></i>
+                    <div class="tile__container">
+                        <p class="tile__title u-no-margin">Full Name.</p>
+                        <p class="tile__subtitle u-no-margin">@username</p>
+                    </div>
+                    <div>
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="action-bar">
+                <div class="u-pull-right">
+                    <a href="#" class="u u-LR">All Suggestions</a>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
